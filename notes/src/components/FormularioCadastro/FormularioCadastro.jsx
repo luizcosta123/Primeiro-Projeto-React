@@ -30,7 +30,7 @@ _criarNota(evento) {
     return (
       <form className='form-cadastro' onSubmit={this._criarNota.bind(this)}>
         <input className='form-cadastro_input' type="text" placeholder="Título" onChange={this._handleMudancaDeTitulo.bind(this)}/>
-        <textarea className='form-cadastro_input' placeholder="Escreva sua nota..." rows={15} onChange={this._handleMudancaDeTexto.bind(this)}/>
+        <textarea className='form-cadastro_input' placeholder="Escreva sua nota..." cols={10} rows={15} onChange={this._handleMudancaDeTexto.bind(this)}/>
         <button className='form-cadastro_submit'>Criar nota</button>
       </form>
     );
